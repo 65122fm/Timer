@@ -1,0 +1,222 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  z-index: 1;
+}
+.background {
+  background-image: url('https://s3-alpha-sig.figma.com/img/7122/c5e6/f9be70d4dfc5e02c8052c448b33f80a1?Expires=1730073600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HTllHgjWMFv0J6hvxm7Z39o4q5BkJTBcWLaUdeyQsUNriTWuRXUNeVlOmKvuGlXkWoGKtM6crwR-LeDX0Wsc--G8Pe99yvjaZjj5vUN5-NAvMY6fw4FhNe6DcwG9oIsu1SHNZSWwgtO9fi6dYpLMAoDREtVuOxvtSTM5QQ5m~TMmgpkwDPnOeXv9ORWqHMp4nTMtPrzb65sin5yJ0eFM7ZKwdjcXn~P8mqSM0kUe7DD6cIoCrtcIYUnXiaSNCyo5J-XGqslDd0lIb~Za4mNWvOc2glpi8a5HwZMICdLGgIEKoLzfIAFugRKUyndDNzYOxjdPQeCydgBrj6thKNSPEg__');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+.header h2{
+  z-index: 242;
+  color: #ffff;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 71.87px;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+#sign-in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  rgba(117, 217, 255, 1);
+  font-size: 60px;
+  width: 100%;
+}
+#sign-in p{
+  font-size: 60px;
+  margin-inline: 16px;
+  /* color: rgba(117, 217, 255, 1); */
+  color: #fff;
+
+}
+.header h1{
+  color: #ffff;
+  font-family: Gafata;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 107.81px;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+.header h1 span{
+  color: rgba(117, 217, 255, 1);
+}
+.header h2 span{
+  color: rgba(117, 217, 255, 1);
+
+}
+.list{
+  display: flex;
+  padding: 40px 0px 16px;
+}
+ul{
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+}
+.numbers
+,p
+{
+  color: #fff;
+  font-family: Gafata;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 107.81px;
+  letter-spacing: 0.07em;
+  text-align: center;
+}
+.clockName{
+  color: rgba(117, 217, 255, 1);
+  font-family: Gafata;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40.43px;
+  letter-spacing: 0.07em;
+  text-align: center;
+
+}
+.line{
+  width: 40%;
+  color: g;
+}
+.gradient-line {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(117, 217, 255, 1) 49.08%, rgba(255, 255, 255, 0) 99.31%);
+  height: 5px;
+  width: 60%;
+  margin: 30px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.inp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+  width: 40%;
+  /* max-width: 380px; */
+  border-radius: 3px;
+  overflow: hidden;
+  }
+  #inp1{
+  width: 50%;
+  }
+  
+  .inp .label {
+  position: absolute;
+  top: 26px;
+  left: 90px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  transform-origin: 0 0;
+  transform: translate3d(0, 0, 0);
+  transition: all .2s ease;
+  pointer-events: none;
+  }
+
+  
+  .inp input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  padding: 16px 12px 0 12px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 400;
+  background:transparent; 
+  box-shadow: inset 0 -1px 0 rgb(16, 20, 129);
+  color: #ffffff;
+  transition: all .15s ease;
+  }
+  
+  .inp input:hover {
+  background: transparent ;
+  box-shadow: inset 0 -1px 0 rgb(46, 43, 136);
+  }
+  
+  .inp input:not(:placeholder-shown) + .label {
+  color: rgba(117, 217, 255, 1);
+  transform: translate3d(0, -12px, 0) scale(.75);
+  }
+  
+  .inp input:focus {
+  background:transparent;
+  outline: none;
+  box-shadow: inset 0 -2px 0 #3498db; 
+  }
+  .label:focus{
+  background:transparent;
+  outline: none;
+  box-shadow: inset 0 -2px 0 #3498db; 
+
+  }
+  
+  .inp input:focus + .label {
+  color: #3498db;
+  transform: translate3d(0, -12px, 0) scale(.75);
+  }
+  
+  .inp input:focus + .label + .focus-bg {
+  transform: scaleX(1);
+  transition: all .1s ease;
+  }
+#btn {
+  background-color: #0078d0;
+  border: 0;
+  border-radius: 56px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  padding: 16px 21px;
+  margin-left: 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#btn:before {
+  background-color: initial;
+  background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+  border-radius: 125px;
+  content: "";
+  height: 50%;
+  left: 4%;
+  opacity: .5;
+  position: absolute;
+  top: 0;
+  transition: all .3s;
+  width: 92%;
+}
+
+#btn:hover {
+  box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+  transform: scale(1.05);
+}
+.message{
+    font-size: 60px;
+}
